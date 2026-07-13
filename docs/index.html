@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BTC Gap Monitor — Deribit vs Polymarket</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#101418;--card:#1a2027;--line:#2a323c;--txt:#dbe2ea;--dim:#8b98a5;
+        --green:#3ecf8e;--red:#ff6b6b;--accent:#5ab0ff;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+       font:14px/1.45 -apple-system,"Segoe UI",Roboto,sans-serif;padding:20px}
+  h1{font-size:19px;margin:0 0 4px}
+  .sub{color:var(--dim);margin-bottom:18px}
+  .cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+        padding:12px 18px;min-width:150px}
+  .card .v{font-size:22px;font-weight:600;margin-top:2px}
+  .card .l{color:var(--dim);font-size:12px}
+  .controls{display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--dim)}
+  input[type=range]{width:160px}
+  table{width:100%;border-collapse:collapse;background:var(--card);
+        border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line);
+        white-space:nowrap}
+  th{color:var(--dim);font-weight:500;cursor:pointer;user-select:none}
+  td:first-child,th:first-child{text-align:left;white-space:normal}
+  tr.signal td{background:rgba(62,207,142,.10)}
+  .pos{color:var(--green)}.neg{color:var(--red)}
+  .side{font-weight:600}
+  .chartbox{background:var(--card);border:1px solid var(--line);border-radius:10px;
+            padding:14px;margin-top:18px;height:280px}
+  .empty{background:var(--card);border:1px dashed var(--line);border-radius:10px;
+         padding:30px;text-align:center;color:var(--dim);margin-top:10px}
+  .foot{color:var(--dim);font-size:12px;margin-top:16px}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<h1>BTC Gap Monitor <span style="color:var(--dim);font-weight:400">Deribit vs Polymarket</span></h1>
+<div class="sub" id="sub">загрузка…</div>
+
+<div class="cards">
+  <div class="card"><div class="l">BTC spot (Deribit index)</div><div class="v" id="c-spot">—</div></div>
+  <div class="card"><div class="l">Рынков отслеживается</div><div class="v" id="c-n">—</div></div>
+  <div class="card"><div class="l">Сигналов сейчас</div><div class="v" id="c-sig">—</div></div>
+  <div class="card"><div class="l">Лучший edge</div><div class="v" id="c-best">—</div></div>
+</div>
+
+<div class="controls">
+  Порог сигнала: <b id="thv" style="color:var(--txt)">4.0%</b>
+  <input type="range" id="th" min="0" max="10" step="0.5" value="4">
+</div>
+
+<div id="tablebox"></div>
+<div class="chartbox"><canvas id="chart"></canvas></div>
+
+<div class="foot">
+  P_der — вероятность из IV-поверхности Deribit (N(d2) / барьерная для touch-рынков).
+  Edge — чистый, за вычетом taker-fee Polymarket; maker-ордера без комиссии.
+  Обновляется GitHub Actions каждые ~30 мин. Базисный риск: разные reference-цены
+  и время резолюции у площадок. Не финансовый совет.
+</div>
+
+<script>
+const fmtP = x => x==null||isNaN(x) ? "—" : (x*100).toFixed(1)+"%";
+const fmtE = x => x==null||isNaN(x) ? "—" :
+  `<span class="${x>=0?'pos':'neg'}">${x>=0?'+':''}${(x*100).toFixed(1)}%</span>`;
+let latest=null, hist=[], sortKey="edge_net", sortDir=-1;
+
+function threshold(){ return document.getElementById("th").value/100; }
+
+function daysLeft(r, now){
+  if(!r.deadline) return null;
+  return (new Date(r.deadline)-now)/864e5;
+}
+
+function renderTable(){
+  const box=document.getElementById("tablebox");
+  if(!latest || !latest.results || !latest.results.length){
+    box.innerHTML='<div class="empty">Данных пока нет. Запустите workflow «btc-gap-scan» на вкладке Actions (Run workflow) и обновите страницу через минуту.</div>';
+    return;
+  }
+  const th=threshold(), now=new Date(latest.now);
+  const rows=[...latest.results].sort((a,b)=>{
+    const va=a[sortKey]??-1e9, vb=b[sortKey]??-1e9;
+    return (va<vb?-1:va>vb?1:0)*sortDir;
+  });
+  const nsig=rows.filter(r=>r.edge_net>=th).length;
+  document.getElementById("c-sig").textContent=nsig;
+  document.getElementById("c-sig").style.color=nsig?"var(--green)":"var(--txt)";
+  const best=Math.max(...rows.map(r=>r.edge_net??-1));
+  document.getElementById("c-best").innerHTML=fmtE(best);
+
+  const cols=[["question","Рынок"],["kind","Тип"],["strike","Strike"],
+              ["days","Дней"],["p_mid","P_poly"],["p_model","P_der"],
+              ["gap","Gap"],["edge_net","Edge"],["side","Сторона"],
+              ["stake_quarter_kelly","~$ (¼ Kelly)"],["liquidity","Ликв. $"]];
+  let h="<table><thead><tr>"+cols.map(([k,t])=>
+      `<th data-k="${k}">${t}${k===sortKey?(sortDir<0?" ↓":" ↑"):""}</th>`).join("")+
+      "</tr></thead><tbody>";
+  for(const r of rows){
+    const d=daysLeft(r,now);
+    h+=`<tr class="${r.edge_net>=th?'signal':''}">
+      <td><a href="https://polymarket.com/market/${r.slug}" target="_blank" rel="noopener">${r.question}</a></td>
+      <td>${r.kind}/${r.dir||r.direction}</td>
+      <td>${r.strike?.toLocaleString()??"—"}</td>
+      <td>${d==null?"—":d.toFixed(1)}</td>
+      <td>${fmtP(r.p_mid)}</td><td>${fmtP(r.p_model)}</td>
+      <td>${fmtE(r.gap)}</td><td>${fmtE(r.edge_net)}</td>
+      <td class="side">${r.side||"—"}</td>
+      <td>${r.stake_quarter_kelly?Math.round(r.stake_quarter_kelly).toLocaleString():"—"}</td>
+      <td>${Math.round(r.liquidity||r.liq||0).toLocaleString()}</td></tr>`;
+  }
+  box.innerHTML=h+"</tbody></table>";
+  box.querySelectorAll("th").forEach(el=>el.onclick=()=>{
+    const k=el.dataset.k;
+    if(k===sortKey) sortDir*=-1; else {sortKey=k;sortDir=-1;}
+    renderTable();
+  });
+}
+
+let chart;
+function renderChart(){
+  if(!hist.length) return;
+  const th=threshold();
+  const labels=hist.map(h=>new Date(h.t).toLocaleString("ru-RU",
+      {day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}));
+  const best=hist.map(h=>Math.max(...h.markets.map(m=>m.edge??-1))*100);
+  const nsig=hist.map(h=>h.markets.filter(m=>(m.edge??-1)>=th).length);
+  const spot=hist.map(h=>h.spot);
+  if(chart) chart.destroy();
+  chart=new Chart(document.getElementById("chart"),{
+    type:"line",
+    data:{labels,datasets:[
+      {label:"Лучший edge, %",data:best,borderColor:"#3ecf8e",
+       backgroundColor:"rgba(62,207,142,.12)",fill:true,tension:.25,yAxisID:"y"},
+      {label:"Сигналов ≥ порога",data:nsig,borderColor:"#5ab0ff",
+       stepped:true,pointRadius:0,yAxisID:"y1"},
+      {label:"BTC spot",data:spot,borderColor:"#8b98a5",borderDash:[4,4],
+       pointRadius:0,yAxisID:"y2",hidden:true}]},
+    options:{maintainAspectRatio:false,interaction:{mode:"index",intersect:false},
+      plugins:{legend:{labels:{color:"#dbe2ea"}}},
+      scales:{x:{ticks:{color:"#8b98a5",maxTicksLimit:10},grid:{color:"#2a323c"}},
+        y:{title:{display:true,text:"edge %",color:"#8b98a5"},
+           ticks:{color:"#8b98a5"},grid:{color:"#2a323c"}},
+        y1:{position:"right",ticks:{color:"#5ab0ff",stepSize:1},grid:{display:false}},
+        y2:{display:false}}}
+  });
+}
+
+async function load(){
+  try{
+    const r=await fetch("data/latest.json?ts="+Date.now());
+    if(r.ok) latest=await r.json();
+  }catch(e){}
+  try{
+    const r=await fetch("data/history.jsonl?ts="+Date.now());
+    if(r.ok){
+      const txt=await r.text();
+      hist=txt.split("\n").filter(Boolean).map(l=>{try{return JSON.parse(l)}catch(e){return null}}).filter(Boolean);
+    }
+  }catch(e){}
+  if(latest&&latest.now){
+    document.getElementById("sub").textContent=
+      "Обновлено: "+new Date(latest.now).toLocaleString("ru-RU")+
+      " · прогонов в истории: "+hist.length;
+    document.getElementById("c-spot").textContent=
+      latest.spot?Math.round(latest.spot).toLocaleString():"—";
+    document.getElementById("c-n").textContent=latest.results?.length??0;
+  } else {
+    document.getElementById("sub").textContent="Нет данных — запустите workflow.";
+  }
+  renderTable(); renderChart();
+}
+
+document.getElementById("th").oninput=e=>{
+  document.getElementById("thv").textContent=(+e.target.value).toFixed(1)+"%";
+  localStorage.setItem("th",e.target.value);
+  renderTable(); renderChart();
+};
+const saved=localStorage.getItem("th");
+if(saved){document.getElementById("th").value=saved;
+  document.getElementById("thv").textContent=(+saved).toFixed(1)+"%";}
+load();
+setInterval(load, 5*60*1000);
+</script>
+</body>
+</html>
