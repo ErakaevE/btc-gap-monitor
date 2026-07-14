@@ -17,3 +17,4 @@
 {"t": "2026-07-14T10:13:58.564270+00:00", "spot": 62649.78, "markets": [{"slug": "will-bitcoin-reach-100k-in-july-2026", "q": "Will Bitcoin reach $100,000 in July?", "kind": "touch", "dir": "up", "strike": 100000.0, "deadline": "2026-08-01T04:00:00+00:00", "p_mid": 0.0015, "p_model": 0.0005, "edge": 0.0004, "side": "BUY NO", "liq": 127355.0}]}
 {"t": "2026-07-14T11:45:30.458976+00:00", "spot": 62780.93, "markets": [{"slug": "will-bitcoin-reach-100k-in-july-2026", "q": "Will Bitcoin reach $100,000 in July?", "kind": "touch", "dir": "up", "strike": 100000.0, "deadline": "2026-08-01T04:00:00+00:00", "p_mid": 0.0015, "p_model": 0.0005, "edge": 0.0004, "side": "BUY NO", "liq": 128216.0}]}
 {"t": "2026-07-14T12:53:32.121523+00:00", "spot": 63760.28, "markets": []}
+{"t": "2026-07-14T14:41:56.571287+00:00", "spot": 63985.05, "markets": []}
