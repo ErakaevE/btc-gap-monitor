@@ -1,49 +1,6 @@
 {
- "now": "2026-07-15T10:24:25.799930+00:00",
- "spot": 64623.72,
+ "now": "2026-07-15T11:55:59.375597+00:00",
+ "spot": 64674.01,
  "min_edge": 0.04,
- "results": [
-  {
-   "question": "Will Bitcoin dip to $57,500 in July?",
-   "slug": "will-bitcoin-dip-to-57pt5k-in-july-2026-618",
-   "kind": "touch",
-   "direction": "down",
-   "strike": 57500.0,
-   "deadline": "2026-08-01T04:00:00+00:00",
-   "p_mid": 0.135,
-   "best_bid": 0.13,
-   "best_ask": 0.14,
-   "liquidity": 48333.5218,
-   "vol24": 116344.14261400004,
-   "fee_rate": 0.07,
-   "p_model": 0.21067125248377513,
-   "gap": 0.07567125248377513,
-   "edge_net": 0.06224325248377513,
-   "side": "BUY YES",
-   "stake_quarter_kelly": 183.0,
-   "sigma": 0.424558492686755,
-   "warns": []
-  },
-  {
-   "question": "Will Bitcoin reach $67,500 in July?",
-   "slug": "will-bitcoin-reach-67pt5k-in-july-2026",
-   "kind": "touch",
-   "direction": "up",
-   "strike": 67500.0,
-   "deadline": "2026-08-01T04:00:00+00:00",
-   "p_mid": 0.535,
-   "best_bid": 0.53,
-   "best_ask": 0.54,
-   "liquidity": 42864.3151,
-   "vol24": 107479.83498000004,
-   "fee_rate": 0.07,
-   "p_model": 0.5124970357006084,
-   "gap": -0.02250296429939158,
-   "edge_net": 6.596429939159654e-05,
-   "side": "BUY NO",
-   "stake_quarter_kelly": 0.0,
-   "sigma": 0.31910172402731346,
-   "warns": []
-  }
- ]
+ "results": []
 }
