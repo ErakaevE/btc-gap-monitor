@@ -49,3 +49,4 @@
 {"t": "2026-07-16T12:00:22.880587+00:00", "spot": 64189.8, "markets": [{"slug": "will-bitcoin-reach-67pt5k-in-july-2026", "q": "Will Bitcoin reach $67,500 in July?", "kind": "touch", "dir": "up", "strike": 67500.0, "deadline": "2026-08-01T04:00:00+00:00", "p_mid": 0.435, "p_model": 0.4461, "edge": -0.0111, "side": "BUY YES", "liq": 40559.0}, {"slug": "will-bitcoin-dip-to-57pt5k-in-july-2026-618", "q": "Will Bitcoin dip to $57,500 in July?", "kind": "touch", "dir": "down", "strike": 57500.0, "deadline": "2026-08-01T04:00:00+00:00", "p_mid": 0.145, "p_model": 0.2121, "edge": 0.0532, "side": "BUY YES", "liq": 56838.0}]}
 {"t": "2026-07-16T14:12:46.207811+00:00", "spot": 64572.57, "markets": []}
 {"t": "2026-07-16T15:47:25.387733+00:00", "spot": 64593.21, "markets": []}
+{"t": "2026-07-16T16:55:35.422975+00:00", "spot": 64462.68, "markets": []}
