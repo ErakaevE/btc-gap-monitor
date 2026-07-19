@@ -1,6 +1,30 @@
 {
- "now": "2026-07-18T23:15:14.089591+00:00",
- "spot": 64702.97,
+ "now": "2026-07-19T00:12:05.185031+00:00",
+ "spot": 64808.62,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will Bitcoin reach $100,000 in July?",
+   "slug": "will-bitcoin-reach-100k-in-july-2026",
+   "kind": "touch",
+   "direction": "up",
+   "strike": 100000.0,
+   "deadline": "2026-08-01T04:00:00+00:00",
+   "p_mid": 0.0015,
+   "best_bid": 0.001,
+   "best_ask": 0.002,
+   "liquidity": 95018.35285,
+   "vol24": 116049.654,
+   "fee_rate": 0.07,
+   "p_model": 8.774939402115545e-05,
+   "gap": -0.0014122506059788447,
+   "edge_net": 0.0008423206059788857,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 2000.0,
+   "sigma": 0.5903873561818194,
+   "warns": [
+    "strike вне сетки Deribit (экстраполяция IV)"
+   ]
+  }
+ ]
 }
