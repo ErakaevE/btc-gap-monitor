@@ -1,6 +1,28 @@
 {
- "now": "2026-07-19T22:06:54.152904+00:00",
- "spot": 64312.7,
+ "now": "2026-07-19T23:07:09.956345+00:00",
+ "spot": 64562.15,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will the price of Bitcoin be above $70,000 on July 20?",
+   "slug": "bitcoin-above-70k-on-july-20-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 70000.0,
+   "deadline": "2026-07-20T16:00:00+00:00",
+   "p_mid": 0.0015,
+   "best_bid": 0.001,
+   "best_ask": 0.002,
+   "liquidity": 48246.64571,
+   "vol24": 84028.028874,
+   "fee_rate": 0.07,
+   "p_model": 1.2813884252076613e-05,
+   "gap": -0.0014871861157479233,
+   "edge_net": 0.0009172561157478887,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 2000.0,
+   "sigma": 0.4381733500196604,
+   "warns": []
+  }
+ ]
 }
