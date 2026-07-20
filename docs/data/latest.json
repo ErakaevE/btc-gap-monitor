@@ -1,8 +1,29 @@
 {
- "now": "2026-07-20T12:06:27.881177+00:00",
- "spot": 64782.32,
+ "now": "2026-07-20T14:30:46.343742+00:00",
+ "spot": 64445.14,
  "min_edge": 0.04,
  "results": [
+  {
+   "question": "Will Bitcoin reach $72,500 in July?",
+   "slug": "will-bitcoin-reach-72pt5k-in-july-2026",
+   "kind": "touch",
+   "direction": "up",
+   "strike": 72500.0,
+   "deadline": "2026-08-01T04:00:00+00:00",
+   "p_mid": 0.0465,
+   "best_bid": 0.046,
+   "best_ask": 0.047,
+   "liquidity": 79265.91738,
+   "vol24": 102807.87531200006,
+   "fee_rate": 0.07,
+   "p_model": 0.07503304441920731,
+   "gap": 0.028533044419207315,
+   "edge_net": 0.024897674419207316,
+   "side": "BUY YES",
+   "stake_quarter_kelly": 66.0,
+   "sigma": 0.37749542919865775,
+   "warns": []
+  },
   {
    "question": "Will Bitcoin reach $100,000 in July?",
    "slug": "will-bitcoin-reach-100k-in-july-2026",
@@ -13,15 +34,15 @@
    "p_mid": 0.0015,
    "best_bid": 0.001,
    "best_ask": 0.002,
-   "liquidity": 91432.69617,
-   "vol24": 95641.12626599999,
+   "liquidity": 92729.71276,
+   "vol24": 91800.707289,
    "fee_rate": 0.07,
-   "p_model": 3.08778240145531e-05,
-   "gap": -0.001469122175985447,
-   "edge_net": 0.0008991921759854415,
+   "p_model": 2.3404908362902835e-05,
+   "gap": -0.0014765950916370973,
+   "edge_net": 0.00090666509163706,
    "side": "BUY NO",
    "stake_quarter_kelly": 2000.0,
-   "sigma": 0.5899577802519763,
+   "sigma": 0.590613949530719,
    "warns": [
     "strike вне сетки Deribit (экстраполяция IV)"
    ]
