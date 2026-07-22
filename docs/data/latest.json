@@ -1,28 +1,6 @@
 {
- "now": "2026-07-22T11:27:09.954851+00:00",
- "spot": 66014.51,
+ "now": "2026-07-22T12:57:24.626247+00:00",
+ "spot": 65540.11,
  "min_edge": 0.04,
- "results": [
-  {
-   "question": "Will Bitcoin reach $67,500 in July?",
-   "slug": "will-bitcoin-reach-67pt5k-in-july-2026",
-   "kind": "touch",
-   "direction": "up",
-   "strike": 67500.0,
-   "deadline": "2026-08-01T04:00:00+00:00",
-   "p_mid": 0.665,
-   "best_bid": 0.66,
-   "best_ask": 0.67,
-   "liquidity": 55947.8342,
-   "vol24": 128650.74815699879,
-   "fee_rate": 0.07,
-   "p_model": 0.6984760623194746,
-   "gap": 0.03347606231947453,
-   "edge_net": 0.012999062319474564,
-   "side": "BUY YES",
-   "stake_quarter_kelly": 103.0,
-   "sigma": 0.3625333518426207,
-   "warns": []
-  }
- ]
+ "results": []
 }
