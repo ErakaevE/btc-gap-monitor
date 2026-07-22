@@ -145,3 +145,4 @@
 {"t": "2026-07-22T18:51:57.716572+00:00", "spot": 65823.08, "markets": []}
 {"t": "2026-07-22T20:08:32.836072+00:00", "spot": 65803.34, "markets": []}
 {"t": "2026-07-22T21:17:58.699647+00:00", "spot": 65913.56, "markets": []}
+{"t": "2026-07-22T22:27:59.796415+00:00", "spot": 65995.11, "markets": [{"slug": "will-bitcoin-dip-to-62pt5k-in-july-2026-from-july-14", "q": "Will Bitcoin dip to $62,500 in July?", "kind": "touch", "dir": "down", "strike": 62500.0, "deadline": "2026-08-01T04:00:00+00:00", "p_mid": 0.3325, "p_model": 0.3919, "edge": 0.0434, "side": "BUY YES", "liq": 35696.0}]}

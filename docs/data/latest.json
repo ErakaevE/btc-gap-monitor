@@ -1,6 +1,28 @@
 {
- "now": "2026-07-22T21:17:58.699647+00:00",
- "spot": 65913.56,
+ "now": "2026-07-22T22:27:59.796415+00:00",
+ "spot": 65995.11,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will Bitcoin dip to $62,500 in July?",
+   "slug": "will-bitcoin-dip-to-62pt5k-in-july-2026-from-july-14",
+   "kind": "touch",
+   "direction": "down",
+   "strike": 62500.0,
+   "deadline": "2026-08-01T04:00:00+00:00",
+   "p_mid": 0.3325,
+   "best_bid": 0.332,
+   "best_ask": 0.333,
+   "liquidity": 35696.08159,
+   "vol24": 75944.328272,
+   "fee_rate": 0.07,
+   "p_model": 0.39191034269283775,
+   "gap": 0.059410342692837737,
+   "edge_net": 0.04336257269283772,
+   "side": "BUY YES",
+   "stake_quarter_kelly": 166.0,
+   "sigma": 0.3909762161024694,
+   "warns": []
+  }
+ ]
 }
