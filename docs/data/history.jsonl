@@ -186,3 +186,4 @@
 {"t": "2026-07-25T16:26:58.422852+00:00", "spot": 64066.07, "markets": []}
 {"t": "2026-07-25T17:31:41.183634+00:00", "spot": 64197.19, "markets": []}
 {"t": "2026-07-25T18:29:25.333179+00:00", "spot": 64344.2, "markets": []}
+{"t": "2026-07-25T19:45:06.812117+00:00", "spot": 64342.38, "markets": [{"slug": "bitcoin-above-60k-on-july-26-2026", "q": "Will the price of Bitcoin be above $60,000 on July 26?", "kind": "terminal", "dir": "up", "strike": 60000.0, "deadline": "2026-07-26T16:00:00+00:00", "p_mid": 0.9985, "p_model": 0.9976, "edge": 0.0002, "side": "BUY NO", "liq": 60764.0}]}

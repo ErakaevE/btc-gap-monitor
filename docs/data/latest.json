@@ -1,6 +1,28 @@
 {
- "now": "2026-07-25T18:29:25.333179+00:00",
- "spot": 64344.2,
+ "now": "2026-07-25T19:45:06.812117+00:00",
+ "spot": 64342.38,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will the price of Bitcoin be above $60,000 on July 26?",
+   "slug": "bitcoin-above-60k-on-july-26-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 60000.0,
+   "deadline": "2026-07-26T16:00:00+00:00",
+   "p_mid": 0.9985,
+   "best_bid": 0.998,
+   "best_ask": 0.999,
+   "liquidity": 60763.69536,
+   "vol24": 100099.30799100002,
+   "fee_rate": 0.07,
+   "p_model": 0.9976103238423324,
+   "gap": -0.0008896761576676626,
+   "edge_net": 0.00024995615766760636,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 1.0,
+   "sigma": 0.5128637777849594,
+   "warns": []
+  }
+ ]
 }
