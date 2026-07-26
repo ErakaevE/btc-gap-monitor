@@ -200,3 +200,4 @@
 {"t": "2026-07-26T13:50:40.959953+00:00", "spot": 64485.17, "markets": []}
 {"t": "2026-07-26T14:53:59.184085+00:00", "spot": 64646.48, "markets": []}
 {"t": "2026-07-26T15:55:28.968240+00:00", "spot": 64722.69, "markets": [{"slug": "will-bitcoin-reach-70k-in-july-2026", "q": "Will Bitcoin reach $70,000 in July?", "kind": "touch", "dir": "up", "strike": 70000.0, "deadline": "2026-08-01T04:00:00+00:00", "p_mid": 0.0705, "p_model": 0.1022, "edge": 0.0266, "side": "BUY YES", "liq": 85993.0}]}
+{"t": "2026-07-26T16:53:39.869539+00:00", "spot": 64714.41, "markets": [{"slug": "will-bitcoin-reach-70k-in-july-2026", "q": "Will Bitcoin reach $70,000 in July?", "kind": "touch", "dir": "up", "strike": 70000.0, "deadline": "2026-08-01T04:00:00+00:00", "p_mid": 0.0625, "p_model": 0.0996, "edge": 0.0325, "side": "BUY YES", "liq": 84489.0}]}
