@@ -1,6 +1,51 @@
 {
- "now": "2026-08-03T01:10:36.692620+00:00",
- "spot": 63210.0,
+ "now": "2026-08-03T04:45:42.690375+00:00",
+ "spot": 62871.18,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will the price of Bitcoin be above $66,000 on August 4?",
+   "slug": "bitcoin-above-66k-on-august-4-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 66000.0,
+   "deadline": "2026-08-04T16:00:00+00:00",
+   "p_mid": 0.0165,
+   "best_bid": 0.016,
+   "best_ask": 0.017,
+   "liquidity": 25991.72357,
+   "vol24": 54578.45146399999,
+   "fee_rate": 0.07,
+   "p_model": 0.01177285988348368,
+   "gap": -0.00472714011651632,
+   "edge_net": 0.003125060116516365,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 524.0,
+   "sigma": 0.33727728614882335,
+   "warns": []
+  },
+  {
+   "question": "Will Bitcoin reach $1,000,000 by December 31, 2026?",
+   "slug": "will-bitcoin-reach-1000000-by-december-31-2026-946",
+   "kind": "touch",
+   "direction": "up",
+   "strike": 1000000.0,
+   "deadline": "2027-01-01T05:00:00+00:00",
+   "p_mid": 0.009,
+   "best_bid": 0.008,
+   "best_ask": 0.01,
+   "liquidity": 233585.51336,
+   "vol24": 53496.945905,
+   "fee_rate": 0.07,
+   "p_model": 7.674268993046141e-13,
+   "gap": -0.008999999999232573,
+   "edge_net": 0.007444479999232589,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 2000.0,
+   "sigma": 0.6169185677274673,
+   "warns": [
+    "strike вне сетки Deribit (экстраполяция IV)"
+   ]
+  }
+ ]
 }

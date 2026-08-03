@@ -308,3 +308,4 @@
 {"t": "2026-08-02T22:34:23.895481+00:00", "spot": 63391.16, "markets": []}
 {"t": "2026-08-02T23:34:09.927926+00:00", "spot": 63521.61, "markets": []}
 {"t": "2026-08-03T01:10:36.692620+00:00", "spot": 63210.0, "markets": []}
+{"t": "2026-08-03T04:45:42.690375+00:00", "spot": 62871.18, "markets": [{"slug": "bitcoin-above-66k-on-august-4-2026", "q": "Will the price of Bitcoin be above $66,000 on August 4?", "kind": "terminal", "dir": "up", "strike": 66000.0, "deadline": "2026-08-04T16:00:00+00:00", "p_mid": 0.0165, "p_model": 0.0118, "edge": 0.0031, "side": "BUY NO", "liq": 25992.0}, {"slug": "will-bitcoin-reach-1000000-by-december-31-2026-946", "q": "Will Bitcoin reach $1,000,000 by December 31, 2026?", "kind": "touch", "dir": "up", "strike": 1000000.0, "deadline": "2027-01-01T05:00:00+00:00", "p_mid": 0.009, "p_model": 0.0, "edge": 0.0074, "side": "BUY NO", "liq": 233586.0}]}
