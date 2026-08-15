@@ -1,6 +1,6 @@
 {
- "now": "2026-08-15T13:20:14.220327+00:00",
- "spot": 62984.08,
+ "now": "2026-08-15T13:46:55.113769+00:00",
+ "spot": 62969.49,
  "min_edge": 0.04,
  "results": [
   {
@@ -13,39 +13,18 @@
    "p_mid": 0.0015,
    "best_bid": 0.001,
    "best_ask": 0.002,
-   "liquidity": 69435.71412,
-   "vol24": 87222.44499999999,
+   "liquidity": 69962.52061,
+   "vol24": 87324.54699999999,
    "fee_rate": 0.07,
-   "p_model": 7.033138359536386e-07,
-   "gap": -0.0014992966861640464,
-   "edge_net": 0.000929366686164057,
+   "p_model": 6.949264750176701e-07,
+   "gap": -0.0014993050735249824,
+   "edge_net": 0.000929375073524974,
    "side": "BUY NO",
    "stake_quarter_kelly": 2000.0,
-   "sigma": 0.44088437312070533,
+   "sigma": 0.44114268297805265,
    "warns": [
     "strike вне сетки Deribit (экстраполяция IV)"
    ]
-  },
-  {
-   "question": "Will Bitcoin dip to $60,000 in August?",
-   "slug": "will-bitcoin-dip-to-60k-in-august-2026",
-   "kind": "touch",
-   "direction": "down",
-   "strike": 60000.0,
-   "deadline": "2026-09-01T04:00:00+00:00",
-   "p_mid": 0.425,
-   "best_bid": 0.42,
-   "best_ask": 0.43,
-   "liquidity": 45434.1985,
-   "vol24": 74681.20385,
-   "fee_rate": 0.07,
-   "p_model": 0.4989742659043901,
-   "gap": 0.0739742659043901,
-   "edge_net": 0.05181726590439012,
-   "side": "BUY YES",
-   "stake_quarter_kelly": 234.0,
-   "sigma": 0.3274299669176185,
-   "warns": []
   }
  ]
 }
