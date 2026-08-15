@@ -1,8 +1,29 @@
 {
- "now": "2026-08-15T17:35:14.996494+00:00",
- "spot": 63005.48,
+ "now": "2026-08-15T17:53:02.028189+00:00",
+ "spot": 63002.41,
  "min_edge": 0.04,
  "results": [
+  {
+   "question": "Will the price of Bitcoin be above $60,000 on August 16?",
+   "slug": "bitcoin-above-60k-on-august-16-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 60000.0,
+   "deadline": "2026-08-16T16:00:00+00:00",
+   "p_mid": 0.9975,
+   "best_bid": 0.997,
+   "best_ask": 0.998,
+   "liquidity": 38961.30465,
+   "vol24": 78551.09089,
+   "fee_rate": 0.07,
+   "p_model": 0.996501278383814,
+   "gap": -0.0009987216161860824,
+   "edge_net": 0.000289351616186026,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 1.0,
+   "sigma": 0.35923921937915426,
+   "warns": []
+  },
   {
    "question": "Will Bitcoin reach $100,000 in August?",
    "slug": "will-bitcoin-reach-100k-in-august-2026",
@@ -13,15 +34,15 @@
    "p_mid": 0.0015,
    "best_bid": 0.001,
    "best_ask": 0.002,
-   "liquidity": 72736.67382,
+   "liquidity": 72074.21338,
    "vol24": 78550.086,
    "fee_rate": 0.07,
-   "p_model": 6.500399936002392e-07,
-   "gap": -0.0014993499600063998,
-   "edge_net": 0.0009294199600063946,
+   "p_model": 6.41351922038729e-07,
+   "gap": -0.0014993586480779612,
+   "edge_net": 0.0009294286480779901,
    "side": "BUY NO",
    "stake_quarter_kelly": 2000.0,
-   "sigma": 0.4415404480318506,
+   "sigma": 0.4415181513474931,
    "warns": [
     "strike вне сетки Deribit (экстраполяция IV)"
    ]
