@@ -1,6 +1,6 @@
 {
- "now": "2026-08-16T19:56:24.735668+00:00",
- "spot": 63050.11,
+ "now": "2026-08-16T20:18:19.625789+00:00",
+ "spot": 63059.61,
  "min_edge": 0.04,
  "results": [
   {
@@ -13,15 +13,15 @@
    "p_mid": 0.0055,
    "best_bid": 0.005,
    "best_ask": 0.006,
-   "liquidity": 83824.37061,
-   "vol24": 97151.919814,
+   "liquidity": 83789.37181,
+   "vol24": 97151.91981400001,
    "fee_rate": 0.07,
-   "p_model": 5.55941643274487e-05,
-   "gap": -0.005444405835672551,
-   "edge_net": 0.004596155835672522,
+   "p_model": 5.945054932935316e-05,
+   "gap": -0.005440549450670647,
+   "edge_net": 0.004592299450670634,
    "side": "BUY NO",
    "stake_quarter_kelly": 2000.0,
-   "sigma": 0.5436370315727628,
+   "sigma": 0.5461721027041311,
    "warns": [
     "strike вне сетки Deribit (экстраполяция IV)"
    ]
@@ -36,16 +36,39 @@
    "p_mid": 0.055,
    "best_bid": 0.05,
    "best_ask": 0.06,
-   "liquidity": 76788.1964,
+   "liquidity": 75665.108,
    "vol24": 86517.96681600001,
    "fee_rate": 0.07,
-   "p_model": 0.11701926493921797,
-   "gap": 0.062019264939217965,
-   "edge_net": 0.05307126493921796,
+   "p_model": 0.1172747790597067,
+   "gap": 0.06227477905970669,
+   "edge_net": 0.05332677905970669,
    "side": "BUY YES",
    "stake_quarter_kelly": 142.0,
-   "sigma": 0.41621954098056735,
+   "sigma": 0.4171567759945485,
    "warns": []
+  },
+  {
+   "question": "Will Bitcoin dip to $47,500 in August?",
+   "slug": "will-bitcoin-dip-to-47pt5k-in-august-2026",
+   "kind": "touch",
+   "direction": "down",
+   "strike": 47500.0,
+   "deadline": "2026-09-01T04:00:00+00:00",
+   "p_mid": 0.0085,
+   "best_bid": 0.008,
+   "best_ask": 0.009,
+   "liquidity": 90062.90046,
+   "vol24": 65567.184258,
+   "fee_rate": 0.07,
+   "p_model": 0.007786153319066278,
+   "gap": -0.0007138466809337224,
+   "edge_net": -0.0003416733190663157,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 0.0,
+   "sigma": 0.5106870282834921,
+   "warns": [
+    "strike вне сетки Deribit (экстраполяция IV)"
+   ]
   },
   {
    "question": "Will Bitcoin dip to $45,000 by December 31, 2026?",
@@ -57,15 +80,15 @@
    "p_mid": 0.245,
    "best_bid": 0.24,
    "best_ask": 0.25,
-   "liquidity": 96561.5081,
+   "liquidity": 95903.8212,
    "vol24": 142666.63779,
    "fee_rate": 0.07,
-   "p_model": 0.31735733055720433,
-   "gap": 0.07235733055720434,
-   "edge_net": 0.054232330557204333,
+   "p_model": 0.31666126350620505,
+   "gap": 0.07166126350620505,
+   "edge_net": 0.05353626350620505,
    "side": "BUY YES",
-   "stake_quarter_kelly": 184.0,
-   "sigma": 0.4982360797721895,
+   "stake_quarter_kelly": 182.0,
+   "sigma": 0.49784779094887893,
    "warns": []
   }
  ]
