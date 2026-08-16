@@ -1,6 +1,6 @@
 {
- "now": "2026-08-16T11:14:33.218949+00:00",
- "spot": 62937.88,
+ "now": "2026-08-16T11:35:24.060212+00:00",
+ "spot": 62921.26,
  "min_edge": 0.04,
  "results": [
   {
@@ -13,15 +13,15 @@
    "p_mid": 0.007,
    "best_bid": 0.006,
    "best_ask": 0.008,
-   "liquidity": 68876.06301,
-   "vol24": 93858.331928,
+   "liquidity": 69455.65516,
+   "vol24": 93848.331928,
    "fee_rate": 0.07,
-   "p_model": 7.911797060953301e-05,
-   "gap": -0.006920882029390467,
-   "edge_net": 0.005503402029390481,
+   "p_model": 7.658231891645407e-05,
+   "gap": -0.006923417681083546,
+   "edge_net": 0.005505937681083539,
    "side": "BUY NO",
    "stake_quarter_kelly": 2000.0,
-   "sigma": 0.5463172677728293,
+   "sigma": 0.5452054628541052,
    "warns": [
     "strike вне сетки Deribit (экстраполяция IV)"
    ]
@@ -36,39 +36,16 @@
    "p_mid": 0.065,
    "best_bid": 0.06,
    "best_ask": 0.07,
-   "liquidity": 70787.2491,
+   "liquidity": 73634.0624,
    "vol24": 90303.518564,
    "fee_rate": 0.07,
-   "p_model": 0.12441775410554788,
-   "gap": 0.05941775410554788,
-   "edge_net": 0.04986075410554787,
+   "p_model": 0.12341043430113771,
+   "gap": 0.05841043430113771,
+   "edge_net": 0.0488534343011377,
    "side": "BUY YES",
-   "stake_quarter_kelly": 135.0,
-   "sigma": 0.41401639301543885,
+   "stake_quarter_kelly": 132.0,
+   "sigma": 0.41234540660962576,
    "warns": []
-  },
-  {
-   "question": "Will Bitcoin reach $100,000 in August?",
-   "slug": "will-bitcoin-reach-100k-in-august-2026",
-   "kind": "touch",
-   "direction": "up",
-   "strike": 100000.0,
-   "deadline": "2026-09-01T04:00:00+00:00",
-   "p_mid": 0.0015,
-   "best_bid": 0.001,
-   "best_ask": 0.002,
-   "liquidity": 80766.38587,
-   "vol24": 69365.24200000001,
-   "fee_rate": 0.07,
-   "p_model": 3.775468006214684e-07,
-   "gap": -0.0014996224531993786,
-   "edge_net": 0.0009296924531994044,
-   "side": "BUY NO",
-   "stake_quarter_kelly": 2000.0,
-   "sigma": 0.44337582461726327,
-   "warns": [
-    "strike вне сетки Deribit (экстраполяция IV)"
-   ]
   },
   {
    "question": "Will Bitcoin dip to $42,500 in August?",
@@ -80,15 +57,15 @@
    "p_mid": 0.0065,
    "best_bid": 0.006,
    "best_ask": 0.007,
-   "liquidity": 56550.07471,
+   "liquidity": 54269.23798,
    "vol24": 55311.150285,
    "fee_rate": 0.07,
-   "p_model": 0.0004979741003096098,
-   "gap": -0.00600202589969039,
-   "edge_net": 0.005084545899690429,
+   "p_model": 0.00048539662155211297,
+   "gap": -0.006014603378447887,
+   "edge_net": 0.005097123378447921,
    "side": "BUY NO",
    "stake_quarter_kelly": 2000.0,
-   "sigma": 0.5357830874066897,
+   "sigma": 0.5346525562885801,
    "warns": [
     "strike вне сетки Deribit (экстраполяция IV)"
    ]
