@@ -1,6 +1,6 @@
 {
- "now": "2026-08-18T15:00:54.341440+00:00",
- "spot": 64718.68,
+ "now": "2026-08-18T15:39:03.465506+00:00",
+ "spot": 64803.33,
  "min_edge": 0.04,
  "results": [
   {
@@ -13,39 +13,18 @@
    "p_mid": 0.0045,
    "best_bid": 0.004,
    "best_ask": 0.005,
-   "liquidity": 86546.0289,
-   "vol24": 73040.41452000002,
+   "liquidity": 87631.16122,
+   "vol24": 73148.74452000002,
    "fee_rate": 0.07,
-   "p_model": 0.009037721471105093,
-   "gap": 0.004537721471105093,
-   "edge_net": 0.003689471471105092,
+   "p_model": 0.00885300525664516,
+   "gap": 0.004353005256645161,
+   "edge_net": 0.00350475525664516,
    "side": "BUY YES",
    "stake_quarter_kelly": 9.0,
-   "sigma": 0.5047364417776897,
+   "sigma": 0.5064206480488437,
    "warns": [
     "strike вне сетки Deribit (экстраполяция IV)"
    ]
-  },
-  {
-   "question": "Will Bitcoin reach $70,000 in August?",
-   "slug": "will-bitcoin-reach-70k-in-august-2026",
-   "kind": "touch",
-   "direction": "up",
-   "strike": 70000.0,
-   "deadline": "2026-09-01T04:00:00+00:00",
-   "p_mid": 0.125,
-   "best_bid": 0.12,
-   "best_ask": 0.13,
-   "liquidity": 32579.4838,
-   "vol24": 71412.983115,
-   "fee_rate": 0.07,
-   "p_model": 0.14612978693465473,
-   "gap": 0.021129786934654726,
-   "edge_net": 0.008212786934654714,
-   "side": "BUY YES",
-   "stake_quarter_kelly": 24.0,
-   "sigma": 0.28431837543486843,
-   "warns": []
   },
   {
    "question": "Will Bitcoin dip to $45,000 by December 31, 2026?",
@@ -57,15 +36,15 @@
    "p_mid": 0.215,
    "best_bid": 0.21,
    "best_ask": 0.22,
-   "liquidity": 176919.6019,
-   "vol24": 469815.00378400006,
+   "liquidity": 177449.3788,
+   "vol24": 264540.58764599997,
    "fee_rate": 0.07,
-   "p_model": 0.28604314728141644,
-   "gap": 0.07104314728141645,
-   "edge_net": 0.05403114728141645,
+   "p_model": 0.2851215594062308,
+   "gap": 0.0701215594062308,
+   "edge_net": 0.0531095594062308,
    "side": "BUY YES",
-   "stake_quarter_kelly": 176.0,
-   "sigma": 0.5076229418183529,
+   "stake_quarter_kelly": 173.0,
+   "sigma": 0.5084990664778563,
    "warns": []
   }
  ]
