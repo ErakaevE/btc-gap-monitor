@@ -1,30 +1,6 @@
 {
- "now": "2026-09-05T12:48:01.765544+00:00",
- "spot": 79742.81,
+ "now": "2026-09-05T15:36:59.895970+00:00",
+ "spot": 79704.15,
  "min_edge": 0.04,
- "results": [
-  {
-   "question": "Will Bitcoin reach $1,000,000 by December 31, 2026?",
-   "slug": "will-bitcoin-reach-1000000-by-december-31-2026-946",
-   "kind": "touch",
-   "direction": "up",
-   "strike": 1000000.0,
-   "deadline": "2027-01-01T05:00:00+00:00",
-   "p_mid": 0.0025,
-   "best_bid": 0.002,
-   "best_ask": 0.003,
-   "liquidity": 277460.07168,
-   "vol24": 110517.52300000002,
-   "fee_rate": 0.07,
-   "p_model": 6.184590880240468e-12,
-   "gap": -0.002499999993815409,
-   "edge_net": 0.001860279993815439,
-   "side": "BUY NO",
-   "stake_quarter_kelly": 2000.0,
-   "sigma": 0.6657364585921558,
-   "warns": [
-    "strike вне сетки Deribit (экстраполяция IV)"
-   ]
-  }
- ]
+ "results": []
 }
