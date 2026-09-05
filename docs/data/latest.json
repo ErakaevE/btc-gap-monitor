@@ -1,6 +1,28 @@
 {
- "now": "2026-09-05T21:28:04.779032+00:00",
- "spot": 79860.38,
+ "now": "2026-09-05T23:08:45.649804+00:00",
+ "spot": 79767.74,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will the price of Bitcoin be above $74,000 on September 6?",
+   "slug": "bitcoin-above-74k-on-september-6-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 74000.0,
+   "deadline": "2026-09-06T16:00:00+00:00",
+   "p_mid": 0.9995,
+   "best_bid": 0.999,
+   "best_ask": 1,
+   "liquidity": 41936.86944,
+   "vol24": 54117.823326,
+   "fee_rate": 0.07,
+   "p_model": 0.9995490612477712,
+   "gap": 4.906124777115384e-05,
+   "edge_net": -0.00061899124777121,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 0.0,
+   "sigma": 0.5112892471545215,
+   "warns": []
+  }
+ ]
 }
