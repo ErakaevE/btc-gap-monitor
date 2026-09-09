@@ -1,6 +1,49 @@
 {
- "now": "2026-09-09T18:37:24.038530+00:00",
- "spot": 78537.84,
+ "now": "2026-09-09T21:08:53.566874+00:00",
+ "spot": 78250.27,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will the price of Bitcoin be above $76,000 on September 10?",
+   "slug": "bitcoin-above-76k-on-september-10-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 76000.0,
+   "deadline": "2026-09-10T16:00:00+00:00",
+   "p_mid": 0.947,
+   "best_bid": 0.944,
+   "best_ask": 0.95,
+   "liquidity": 38846.08622,
+   "vol24": 91415.43620200001,
+   "fee_rate": 0.07,
+   "p_model": 0.936025183458976,
+   "gap": -0.010974816541023946,
+   "edge_net": 0.0042743365410239376,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 11.0,
+   "sigma": 0.41012132914744887,
+   "warns": []
+  },
+  {
+   "question": "Will Bitcoin dip to $45,000 by December 31, 2026?",
+   "slug": "will-bitcoin-dip-to-45000-by-december-31-2026-674-923-755-971-998-525-926-245-316-517-544-589-965-923-986-841-815-224-586-231-289-533-573",
+   "kind": "touch",
+   "direction": "down",
+   "strike": 45000.0,
+   "deadline": "2027-01-01T05:00:00+00:00",
+   "p_mid": 0.085,
+   "best_bid": 0.08,
+   "best_ask": 0.09,
+   "liquidity": 368783.5027,
+   "vol24": 92013.908331,
+   "fee_rate": 0.07,
+   "p_model": 0.11642211645472791,
+   "gap": 0.03142211645472791,
+   "edge_net": 0.020689116454727915,
+   "side": "BUY YES",
+   "stake_quarter_kelly": 57.0,
+   "sigma": 0.5840071749219001,
+   "warns": []
+  }
+ ]
 }
