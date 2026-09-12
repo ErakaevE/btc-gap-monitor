@@ -1,49 +1,6 @@
 {
- "now": "2026-09-12T11:39:20.242097+00:00",
- "spot": 77309.28,
+ "now": "2026-09-12T14:21:45.765268+00:00",
+ "spot": 77367.71,
  "min_edge": 0.04,
- "results": [
-  {
-   "question": "Will Bitcoin reach $80,000 in September?",
-   "slug": "will-bitcoin-reach-80k-in-september-2026-from-september-7",
-   "kind": "touch",
-   "direction": "up",
-   "strike": 80000.0,
-   "deadline": "2026-10-01T04:00:00+00:00",
-   "p_mid": 0.655,
-   "best_bid": 0.65,
-   "best_ask": 0.66,
-   "liquidity": 51925.1596,
-   "vol24": 78269.382491,
-   "fee_rate": 0.07,
-   "p_model": 0.653936181312335,
-   "gap": -0.0010638186876650302,
-   "edge_net": -0.019861181312334997,
-   "side": "BUY NO",
-   "stake_quarter_kelly": 0.0,
-   "sigma": 0.3496485310553753,
-   "warns": []
-  },
-  {
-   "question": "Will Bitcoin reach $95,000 by December 31, 2026?",
-   "slug": "will-bitcoin-reach-95000-by-december-31-2026-from-june-8",
-   "kind": "touch",
-   "direction": "up",
-   "strike": 95000.0,
-   "deadline": "2027-01-01T05:00:00+00:00",
-   "p_mid": 0.325,
-   "best_bid": 0.32,
-   "best_ask": 0.33,
-   "liquidity": 64232.6191,
-   "vol24": 79652.750096,
-   "fee_rate": 0.07,
-   "p_model": 0.30882725789706955,
-   "gap": -0.01617274210293046,
-   "edge_net": -0.0040592578970695126,
-   "side": "BUY NO",
-   "stake_quarter_kelly": 0.0,
-   "sigma": 0.3948549621983254,
-   "warns": []
-  }
- ]
+ "results": []
 }
