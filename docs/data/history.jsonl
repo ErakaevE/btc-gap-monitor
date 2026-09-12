@@ -1191,3 +1191,4 @@
 {"t": "2026-09-12T11:39:20.242097+00:00", "spot": 77309.28, "markets": [{"slug": "will-bitcoin-reach-80k-in-september-2026-from-september-7", "q": "Will Bitcoin reach $80,000 in September?", "kind": "touch", "dir": "up", "strike": 80000.0, "deadline": "2026-10-01T04:00:00+00:00", "p_mid": 0.655, "p_model": 0.6539, "edge": -0.0199, "side": "BUY NO", "liq": 51925.0}, {"slug": "will-bitcoin-reach-95000-by-december-31-2026-from-june-8", "q": "Will Bitcoin reach $95,000 by December 31, 2026?", "kind": "touch", "dir": "up", "strike": 95000.0, "deadline": "2027-01-01T05:00:00+00:00", "p_mid": 0.325, "p_model": 0.3088, "edge": -0.0041, "side": "BUY NO", "liq": 64233.0}]}
 {"t": "2026-09-12T14:21:45.765268+00:00", "spot": 77367.71, "markets": []}
 {"t": "2026-09-12T17:17:05.018363+00:00", "spot": 77290.13, "markets": []}
+{"t": "2026-09-12T19:25:47.333305+00:00", "spot": 77120.14, "markets": []}
