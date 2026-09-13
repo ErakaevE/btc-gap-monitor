@@ -1194,3 +1194,4 @@
 {"t": "2026-09-12T19:25:47.333305+00:00", "spot": 77120.14, "markets": []}
 {"t": "2026-09-12T21:31:42.351860+00:00", "spot": 77204.39, "markets": []}
 {"t": "2026-09-12T23:13:46.883213+00:00", "spot": 77258.48, "markets": [{"slug": "bitcoin-above-82k-on-september-13-2026", "q": "Will the price of Bitcoin be above $82,000 on September 13?", "kind": "terminal", "dir": "up", "strike": 82000.0, "deadline": "2026-09-13T16:00:00+00:00", "p_mid": 0.0025, "p_model": 0.0002, "edge": 0.0007, "side": "BUY NO", "liq": 36255.0}]}
+{"t": "2026-09-13T01:02:04.548287+00:00", "spot": 77265.47, "markets": [{"slug": "bitcoin-above-82k-on-september-13-2026", "q": "Will the price of Bitcoin be above $82,000 on September 13?", "kind": "terminal", "dir": "up", "strike": 82000.0, "deadline": "2026-09-13T16:00:00+00:00", "p_mid": 0.0005, "p_model": 0.0001, "edge": -0.001, "side": "BUY YES", "liq": 34500.0}]}
