@@ -1247,3 +1247,4 @@
 {"t": "2026-09-20T11:48:19.317557+00:00", "spot": 80453.33, "markets": [{"slug": "will-bitcoin-dip-to-64k-september-14-20-2026", "q": "Will Bitcoin dip to $64,000 September 14-20?", "kind": "touch", "dir": "down", "strike": 64000.0, "deadline": "2026-09-21T04:00:00+00:00", "p_mid": 0.0005, "p_model": 0.0, "edge": -0.0011, "side": "BUY YES", "liq": 87589.0}, {"slug": "will-bitcoin-reach-100k-in-september-2026", "q": "Will Bitcoin reach $100,000 in September?", "kind": "touch", "dir": "up", "strike": 100000.0, "deadline": "2026-10-01T04:00:00+00:00", "p_mid": 0.0075, "p_model": 0.0059, "edge": 0.0006, "side": "BUY NO", "liq": 151072.0}]}
 {"t": "2026-09-20T14:54:57.210753+00:00", "spot": 80675.33, "markets": []}
 {"t": "2026-09-20T17:51:00.898317+00:00", "spot": 81336.2, "markets": []}
+{"t": "2026-09-20T19:50:44.095127+00:00", "spot": 81241.89, "markets": []}
