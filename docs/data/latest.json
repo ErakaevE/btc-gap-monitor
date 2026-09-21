@@ -1,6 +1,49 @@
 {
- "now": "2026-09-20T23:47:17.895909+00:00",
- "spot": 81181.62,
+ "now": "2026-09-21T01:44:04.426364+00:00",
+ "spot": 81433.88,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will the price of Bitcoin be above $84,000 on September 21?",
+   "slug": "bitcoin-above-84k-on-september-21-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 84000.0,
+   "deadline": "2026-09-21T16:00:00+00:00",
+   "p_mid": 0.0475,
+   "best_bid": 0.047,
+   "best_ask": 0.048,
+   "liquidity": 41124.3563,
+   "vol24": 94238.17492100001,
+   "fee_rate": 0.07,
+   "p_model": 0.06207287305504908,
+   "gap": 0.014572873055049076,
+   "edge_net": 0.010874153055049074,
+   "side": "BUY YES",
+   "stake_quarter_kelly": 29.0,
+   "sigma": 0.50108062931314,
+   "warns": []
+  },
+  {
+   "question": "Will the price of Bitcoin be above $78,000 on September 21?",
+   "slug": "bitcoin-above-78k-on-september-21-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 78000.0,
+   "deadline": "2026-09-21T16:00:00+00:00",
+   "p_mid": 0.986,
+   "best_bid": 0.984,
+   "best_ask": 0.988,
+   "liquidity": 40839.8986,
+   "vol24": 69607.01957299998,
+   "fee_rate": 0.07,
+   "p_model": 0.9790774710658684,
+   "gap": -0.006922528934131589,
+   "edge_net": 0.003820448934131585,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 10.0,
+   "sigma": 0.5235734442004775,
+   "warns": []
+  }
+ ]
 }
