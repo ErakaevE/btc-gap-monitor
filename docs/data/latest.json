@@ -1,6 +1,30 @@
 {
- "now": "2026-10-04T14:05:13.213624+00:00",
- "spot": 85228.89,
+ "now": "2026-10-04T18:06:15.446242+00:00",
+ "spot": 85307.66,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will Bitcoin reach $150,000 in October?",
+   "slug": "will-bitcoin-reach-150k-in-october-2026",
+   "kind": "touch",
+   "direction": "up",
+   "strike": 150000.0,
+   "deadline": "2026-11-01T04:00:00+00:00",
+   "p_mid": 0.0025,
+   "best_bid": 0.002,
+   "best_ask": 0.003,
+   "liquidity": 133721.34845,
+   "vol24": 139766.323825,
+   "fee_rate": 0.07,
+   "p_model": 1.6272162843142043e-05,
+   "gap": -0.002483727837156858,
+   "edge_net": 0.0018440078371568802,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 2000.0,
+   "sigma": 0.4848516832252981,
+   "warns": [
+    "strike вне сетки Deribit (экстраполяция IV)"
+   ]
+  }
+ ]
 }
