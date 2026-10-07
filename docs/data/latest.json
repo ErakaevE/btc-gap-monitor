@@ -1,6 +1,49 @@
 {
- "now": "2026-10-06T23:17:46.347643+00:00",
- "spot": 85458.08,
+ "now": "2026-10-07T02:27:35.556120+00:00",
+ "spot": 83745.76,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will the price of Bitcoin be above $88,000 on October 7?",
+   "slug": "bitcoin-above-88k-on-october-7-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 88000.0,
+   "deadline": "2026-10-07T16:00:00+00:00",
+   "p_mid": 0.016,
+   "best_bid": 0.012,
+   "best_ask": 0.02,
+   "liquidity": 35362.54857,
+   "vol24": 63633.36685499998,
+   "fee_rate": 0.07,
+   "p_model": 0.002560003347345673,
+   "gap": -0.013439996652654327,
+   "edge_net": 0.008610076652654342,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 1927.0,
+   "sigma": 0.45059462440297005,
+   "warns": []
+  },
+  {
+   "question": "Will the price of Bitcoin be above $82,000 on October 7?",
+   "slug": "bitcoin-above-82k-on-october-7-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 82000.0,
+   "deadline": "2026-10-07T16:00:00+00:00",
+   "p_mid": 0.8965,
+   "best_bid": 0.893,
+   "best_ask": 0.9,
+   "liquidity": 40944.63941,
+   "vol24": 61934.83282499999,
+   "fee_rate": 0.07,
+   "p_model": 0.8754699543277642,
+   "gap": -0.021030045672235764,
+   "edge_net": 0.010841475672235812,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 31.0,
+   "sigma": 0.4637808952953235,
+   "warns": []
+  }
+ ]
 }
