@@ -1353,3 +1353,4 @@
 {"t": "2026-10-10T14:37:28.587946+00:00", "spot": 82927.61, "markets": [{"slug": "will-bitcoin-dip-to-65k-in-october-2026", "q": "Will Bitcoin dip to $65,000 in October?", "kind": "touch", "dir": "down", "strike": 65000.0, "deadline": "2026-11-01T04:00:00+00:00", "p_mid": 0.0245, "p_model": 0.07, "edge": 0.0433, "side": "BUY YES", "liq": 90310.0}, {"slug": "will-bitcoin-dip-to-55000-by-december-31-2026-527-627-868-745-188-361-314-673-612-946-821-624-855-557-684-381-884-939-182-939-516", "q": "Will Bitcoin dip to $55,000 by December 31, 2026?", "kind": "touch", "dir": "down", "strike": 55000.0, "deadline": "2027-01-01T05:00:00+00:00", "p_mid": 0.085, "p_model": 0.1291, "edge": 0.0334, "side": "BUY YES", "liq": 246662.0}]}
 {"t": "2026-10-10T18:49:21.240444+00:00", "spot": 82965.78, "markets": []}
 {"t": "2026-10-10T22:01:51.892512+00:00", "spot": 82964.66, "markets": []}
+{"t": "2026-10-11T00:50:03.340456+00:00", "spot": 82910.26, "markets": []}
