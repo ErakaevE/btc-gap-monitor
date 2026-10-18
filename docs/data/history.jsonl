@@ -1394,3 +1394,4 @@
 {"t": "2026-10-17T20:57:25.886948+00:00", "spot": 81538.59, "markets": []}
 {"t": "2026-10-17T22:54:44.026817+00:00", "spot": 81304.61, "markets": []}
 {"t": "2026-10-18T00:31:36.223540+00:00", "spot": 81345.88, "markets": []}
+{"t": "2026-10-18T05:02:05.918209+00:00", "spot": 81682.77, "markets": [{"slug": "bitcoin-above-80k-on-october-18-2026", "q": "Will the price of Bitcoin be above $80,000 on October 18?", "kind": "terminal", "dir": "up", "strike": 80000.0, "deadline": "2026-10-18T16:00:00+00:00", "p_mid": 0.9905, "p_model": 0.9616, "edge": 0.0277, "side": "BUY NO", "liq": 44454.0}]}
