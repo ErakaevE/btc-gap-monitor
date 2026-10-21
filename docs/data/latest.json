@@ -1,8 +1,29 @@
 {
- "now": "2026-10-21T20:39:19.843842+00:00",
- "spot": 84569.47,
+ "now": "2026-10-21T23:36:59.864168+00:00",
+ "spot": 84215.34,
  "min_edge": 0.04,
  "results": [
+  {
+   "question": "Will Bitcoin reach $85,000 in October?",
+   "slug": "will-bitcoin-reach-85k-in-october-2026-from-october-7",
+   "kind": "touch",
+   "direction": "up",
+   "strike": 85000.0,
+   "deadline": "2026-11-01T04:00:00+00:00",
+   "p_mid": 0.865,
+   "best_bid": 0.86,
+   "best_ask": 0.87,
+   "liquidity": 45887.5993,
+   "vol24": 93195.27378,
+   "fee_rate": 0.07,
+   "p_model": 0.8614384948619056,
+   "gap": -0.0035615051380943896,
+   "edge_net": -0.009866494861905606,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 0.0,
+   "sigma": 0.3277786857560637,
+   "warns": []
+  },
   {
    "question": "Will Bitcoin dip to $50,000 by December 31, 2026?",
    "slug": "will-bitcoin-dip-to-50000-by-december-31-2026-454-325-222-878-949-487-451-853-523-111",
@@ -13,15 +34,15 @@
    "p_mid": 0.06,
    "best_bid": 0.05,
    "best_ask": 0.07,
-   "liquidity": 158896.0345,
-   "vol24": 116981.43,
+   "liquidity": 162500.86,
+   "vol24": 117743.495715,
    "fee_rate": 0.07,
-   "p_model": 0.0711953246826503,
-   "gap": 0.011195324682650304,
-   "edge_net": -0.0033616753173497105,
+   "p_model": 0.07208308011094025,
+   "gap": 0.012083080110940253,
+   "edge_net": -0.0024739198890597613,
    "side": "BUY YES",
    "stake_quarter_kelly": 0.0,
-   "sigma": 0.6197850347610468,
+   "sigma": 0.6173881738200724,
    "warns": []
   }
  ]
