@@ -1,6 +1,49 @@
 {
- "now": "2026-10-24T01:34:23.954733+00:00",
- "spot": 80733.24,
+ "now": "2026-10-24T06:24:24.732617+00:00",
+ "spot": 80664.25,
  "min_edge": 0.04,
- "results": []
+ "results": [
+  {
+   "question": "Will the price of Bitcoin be above $80,000 on October 24?",
+   "slug": "bitcoin-above-80k-on-october-24-2026",
+   "kind": "terminal",
+   "direction": "up",
+   "strike": 80000.0,
+   "deadline": "2026-10-24T16:00:00+00:00",
+   "p_mid": 0.92,
+   "best_bid": 0.916,
+   "best_ask": 0.924,
+   "liquidity": 48396.48938,
+   "vol24": 106678.740689,
+   "fee_rate": 0.07,
+   "p_model": 0.8405435791929929,
+   "gap": -0.0794564208070071,
+   "edge_net": 0.0700703408070071,
+   "side": "BUY NO",
+   "stake_quarter_kelly": 192.0,
+   "sigma": 0.25024053959941334,
+   "warns": []
+  },
+  {
+   "question": "Will Bitcoin dip to $80,000 October 19-25?",
+   "slug": "will-bitcoin-dip-to-80k-october-19-25-2026",
+   "kind": "touch",
+   "direction": "down",
+   "strike": 80000.0,
+   "deadline": "2026-10-26T04:00:00+00:00",
+   "p_mid": 0.535,
+   "best_bid": 0.53,
+   "best_ask": 0.54,
+   "liquidity": 45369.737,
+   "vol24": 77688.413833,
+   "fee_rate": 0.07,
+   "p_model": 0.6377536429884977,
+   "gap": 0.10275364298849765,
+   "edge_net": 0.08036564298849769,
+   "side": "BUY YES",
+   "stake_quarter_kelly": 454.0,
+   "sigma": 0.24154241386852868,
+   "warns": []
+  }
+ ]
 }
