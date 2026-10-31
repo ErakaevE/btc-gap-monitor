@@ -1,28 +1,6 @@
 {
- "now": "2026-10-31T19:05:34.749107+00:00",
- "spot": 77525.42,
+ "now": "2026-10-31T22:25:30.402469+00:00",
+ "spot": 77492.53,
  "min_edge": 0.04,
- "results": [
-  {
-   "question": "Will Bitcoin dip to $75,000 in October?",
-   "slug": "will-bitcoin-dip-to-75k-in-october-2026",
-   "kind": "touch",
-   "direction": "down",
-   "strike": 75000.0,
-   "deadline": "2026-11-01T04:00:00+00:00",
-   "p_mid": 0.009,
-   "best_bid": 0.008,
-   "best_ask": 0.01,
-   "liquidity": 81471.37434,
-   "vol24": 213024.073023,
-   "fee_rate": 0.07,
-   "p_model": 0.0019902516316012767,
-   "gap": -0.007009748368398723,
-   "edge_net": 0.005454228368398706,
-   "side": "BUY NO",
-   "stake_quarter_kelly": 1832.0,
-   "sigma": 0.3354,
-   "warns": []
-  }
- ]
+ "results": []
 }
