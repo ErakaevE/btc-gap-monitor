@@ -1,30 +1,6 @@
 {
- "now": "2026-11-10T02:42:41.705116+00:00",
- "spot": 74726.56,
+ "now": "2026-11-10T10:27:11.237215+00:00",
+ "spot": 74211.51,
  "min_edge": 0.04,
- "results": [
-  {
-   "question": "Will Bitcoin dip to $55,000 by December 31, 2026?",
-   "slug": "will-bitcoin-dip-to-55000-by-december-31-2026-527-627-868-745-188-361-314-673-612-946-821-624-855-557-684-381-884-939-182-939-516",
-   "kind": "touch",
-   "direction": "down",
-   "strike": 55000.0,
-   "deadline": "2027-01-01T05:00:00+00:00",
-   "p_mid": 0.095,
-   "best_bid": 0.09,
-   "best_ask": 0.1,
-   "liquidity": 177408.2838,
-   "vol24": 100021.185206,
-   "fee_rate": 0.07,
-   "p_model": 0.13272069036010697,
-   "gap": 0.03772069036010697,
-   "edge_net": 0.02642069036010697,
-   "side": "BUY YES",
-   "stake_quarter_kelly": 74.0,
-   "sigma": 0.513647873241218,
-   "warns": [
-    "strike вне сетки Deribit (экстраполяция IV)"
-   ]
-  }
- ]
+ "results": []
 }
